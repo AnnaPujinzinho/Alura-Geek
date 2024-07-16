@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -28,14 +28,14 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <div class="header__logo-busqueda">
+            <div class="header__logo-busca">
                 <div class="logo">
                     <a href="index.html" class="header__logo__link">
                         <img src="./assets/svg/Logo_alura_geek.svg" alt="logo Alura Geek" class="header__logo">
                     </a>
                 </div>
                 <div class="header__search hide">
-                    <input type="text" class="search__input" placeholder="¿Qué deseas Buscar?">
+                    <input type="text" class="search__input" placeholder="O que deseja buscar?">
                     <a href="#" class="icon__search" data-search></a>
                 </div>
 
@@ -48,7 +48,7 @@
             </div>
         </div>
     </header>
-    <div class="menu__flotante">
+    <div class="menu__flutuante">
         <div class="icono__menu" data-menu="float">
             <img src="./assets/svg/starwars-tropper.svg" alt="trooper icon button">
         </div>
@@ -78,11 +78,11 @@
          <!-- zona banner slider-->
 
     <section class="  banner_span1 hero">
-        <div class="hero__container banner__contenido contenedor">
+        <div class="hero__container banner__conteudo">
             <h1>Fevereiro Promocional</h1>
             <h2>Produtos selecionados com 33% de desconto</h2>
-          <a href="#consolas" class="hero__btn__link">
-            <button class="hero__boton">Ver consolas</button>
+          <a href="#produtos" class="hero__btn__link">
+            <button class="hero__boton">Ver produtos</button>
         </a>
         </div>
         <nav class="banner__nav-content">
@@ -94,33 +94,32 @@
         </section>
 
 
-        <section class="productos">
+        <section class="produtos">
 
             <!-- star wars -->
-            <div class="productos__flia" >
-                <div class="productos__barra">
-                    <div class="productos__titulo">
-                        <h2 class="productos__titulo">Star Wars</h2>
+            <div class="produtos__flia" >
+                <div class="produtos__barra">
+                    <div class="produtos__titulo">
+                        <h2 class="produtos__titulo">Star Wars</h2>
                     </div>
-                    <a href="./screens/productos.html" class="productos__verMas" data-starwars>
-                        <h4>Ver más</h4>
-                        <span class="productos__iconoFlecha"></span>
+                    <a href="./screens/produtos.html" class="produtos__verMais" data-starwars>
+                        <h4>Ver mais</h4>
+                        <span class="productos__iconeFechar"></span>
                     </a>
                 </div>
-                <div class="productos__tarjetas" data-section="starwars">
-                    <!-- Aquí va el contenido inyectado mediante DOM -->                    
+                <div class="productos__precos" data-section="starwars">                    
                 </div>
             </div>
 
-            <!-- Consolas -->
-            <div class="productos__flia" id="consolas">
-                <div class="productos__barra">
-                    <div class="productos__titulo">
-                        <h2 class="productos__titulo">Consolas</h2>
+            <!-- Produtos -->
+            <div class="productos__fila" id="produtos">
+                <div class="produtos__barra">
+                    <div class="produtos__titulo">
+                        <h2 class="produtos__titulo">Produtos</h2>
                     </div>
-                    <a href="./screens/productos.html" class="productos__verMas" data-consolas>
-                        <h4>Ver más</h4>
-                        <span class="productos__iconoFlecha"></span>
+                    <a href="./screens/productos.html" class="produtos__verMais" data-consolas>
+                        <h4>Ver mais</h4>
+                        <span class="produtos__iconeFechar"></span>
                     </a>
                 </div>
 
@@ -135,13 +134,12 @@
                     <div class="productos__titulo">
                         <h2 class="productos__titulo">Diversos</h2>
                     </div>
-                    <a href="./screens/productos.html" class="productos__verMas" data-diversos>
+                    <a href="./screens/produtos.html" class="produtos__verMais" data-diversos>
                         <h4>Ver mais</h4>
-                        <span class="productos__iconoFlecha"></span>
+                        <span class="produtos__iconoFechar"></span>
                     </a>
                 </div>
-                <div class="productos__tarjetas" data-section="diversos">
-                    <!-- Aquí va el contenido inyectado mediante DOM -->
+                <div class="produtos__precos" data-section="diversos">
                 </div>
             </div>
         </section>
@@ -157,45 +155,33 @@
                         <li><a href="#">Quem somos</a></li>
                         <li><a href="#">Política de privacidade</a></li>
                         <li><a href="#">Programa de fidelidade</a></li>
-                        <li><a href="#">Nuestras Tiendas</a></li>
-                        <li><a href="#">Quiero ser franquiciado</a></li>
+                        <li><a href="#">Nossas Redes</a></li>
+                        <li><a href="#">Quero ser membro</a></li>
                         <li><a href="#">Anúncie aqui</a></li>
                     </ul>
                 </nav>
             </div>
 
 
-            <form class="footer__contacto">
+            <form class="footer__contato">
                 <h2>Fale conosco</h2>
-                <div class="contacto__nombre">
-                    <label class="label__nombre" for="name">Nome</label>
-                    <input class="nombre" type="name" placeholder="Jhon Doe" title="Solo letras y espacios en blanco"
+                <div class="contato__nome">
+                    <label class="label__nome" for="name">Nome</label>
+                    <input class="nome" type="name" placeholder="Jhon Doe" title="Só letras e espaços em branco"
                         required>
                 </div>
-                <div class="contacto__nombre">
-                    <input class="nombre" type="email" placeholder="ejmplo@correo.com"
-                        title="Este no es un correo válido" required>
+                <div class="contato__nome">
+                    <input class="nome" type="email" placeholder="ejmplo@correo.com"
+                        title="Este não é um email válido" required>
                 </div>
 
-                <textarea class="footer__textarea" name="" cols="30" rows="10" placeholder="Escribe tu mensaje"
+                <textarea class="footer__textarea" name="" cols="30" rows="10" placeholder="Escreva a sua mensagem"
                     required></textarea>
                 <input type="submit" class="submit">
             </form>
         </div>
     </footer>
-    <section class="rodapie">
-        <div class="rodapie__container">
-            <a class="rodapie__link" href="https://github.com/SofiDevO/alura-geek" target="_blank"
-                rel="nofollow nopenner no-referrer">
-                <i class="fa-brands fa-github-alt"></i>
-            </a>
-            <a class="rodapie__link" href="https://www.linkedin.com/in/sofidev/" target="_blank"
-                rel="nofollow nopenner no-referrer">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a class="rodapie__link" href="https://itssofi.dev/" target="_blank" rel="nofollow nopenner no-referrer">
-                <i class="fa-solid fa-briefcase"></i>
-            </a>
+    <section class="rodape">
         </div>
         <div class="rodapie__credito">
             <p>Ana Júlia</p>
